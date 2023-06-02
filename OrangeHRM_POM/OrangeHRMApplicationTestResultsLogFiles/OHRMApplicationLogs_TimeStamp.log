@@ -1,0 +1,31 @@
+2023-05-28 11:12:42,559 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:44,592 - Log -INFO - The actual LogIn page Text is :- LOGIN Panel
+2023-05-28 11:12:44,595 - Log -INFO - The expected LogIn Page Text is :-LOGIN Panel
+2023-05-28 11:12:44,598 - Log -INFO -  Validating LogIn Page LogInPanel Text Successfull - Naviagated to LogIN Page
+2023-05-28 11:12:44,727 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:46,883 - Log -INFO - Validating LogIn Functionality
+2023-05-28 11:12:46,885 - Log -INFO - Validation of LogIn functionality Successfull
+2023-05-28 11:12:47,029 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:49,838 - Log -INFO - validating the Home Page Admin Functionality
+2023-05-28 11:12:49,845 - Log -INFO - Validation of Home Page Admin functionality Successfull
+2023-05-28 11:12:49,985 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:53,496 - Log -INFO - Validating the Home Page PIM Functionality
+2023-05-28 11:12:53,500 - Log -INFO - Validation of Home Page PIM functionality Successfull
+2023-05-28 11:12:53,634 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:56,441 - Log -INFO - Validating the Home Page Leave Functionality
+2023-05-28 11:12:56,447 - Log -INFO - Validation of Home Page Leave functionality Successfull
+2023-05-28 11:12:56,616 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:12:59,303 - Log -INFO - Validating the Home Page Time Functionality
+2023-05-28 11:12:59,306 - Log -INFO - Validation of Home Page Time functionality Successfull
+2023-05-28 11:12:59,494 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:13:02,371 - Log -INFO - Validating the Home Page Recruitment Functionality
+2023-05-28 11:13:02,376 - Log -INFO - Validation of Home Page Recruitment functionality Successfull
+2023-05-28 11:13:02,588 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:13:05,318 - Log -INFO - Validating the Home Page Performance Functionality
+2023-05-28 11:13:05,322 - Log -INFO - Validation of Home Page Performance functionality Successfull
+2023-05-28 11:13:05,458 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:13:08,027 - Log -INFO - Validation of Home Page Dashboard functionality Successfull
+2023-05-28 11:13:08,222 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:13:14,578 - Log -INFO - Validation of Home Page Directory functionality Successfull
+2023-05-28 11:13:14,735 - Log -INFO - ****** successfully Navigate to the Chrome ***
+2023-05-28 11:13:17,303 - Log -INFO - Validation of Home Page Maintenance functionality Successfull

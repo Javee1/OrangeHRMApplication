@@ -1,0 +1,94 @@
+package StepDefination;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMApplicationMethods {
+	
+	WebDriver driver;
+	String applicationUrlAddress="http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/auth/login";
+	
+	@Given("^User Should Launch Chrome Browser$")
+	public void user_Should_Launch_Chrome_Browser()
+	{
+	  
+		System.setProperty("webdriver.chrome.driver", "./ChromeBrowser/chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+	}
+
+	@When("^User Should Enter Valid OrangeHRM Application URL Address$")
+	public void user_Should_Enter_Valid_OrangeHRM_Application_URL_Address() 
+	{
+		
+		driver.get(applicationUrlAddress);
+	   
+	}
+
+	@Then("^User Should be Navigated to OrangeHRM LogIn Page$")
+	public void user_Should_be_Navigated_to_OrangeHRM_LogIn_Page() 
+	{
+		String expected_LogInPanelText="LOGIN Panel";
+		System.out.println(" The expected OrangeHRM Login Panel is:- "+expected_LogInPanelText);
+		
+
+		//<div id="logInPanelHeading">LOGIN Panel</div>
+		By loginPanelLocator=By.id("logInPanelHeading");
+		WebElement loginPanel=driver.findElement(loginPanelLocator);
+		String actual_LogInPanelText=loginPanel.getText();
+		
+		System.out.println(" The Actual OrangeHRM Login Panel is:- "+actual_LogInPanelText);
+		
+		if(actual_LogInPanelText.equals(expected_LogInPanelText))
+		{
+			System.out.println("PASS");
+			
+		}
+		else
+		{
+			System.out.println("FAIL");
+			
+		}
+		
+		
+		// OrangeHRM Tittle Functionality 
+		
+		String expected_LogInPageTittle="OrangeHRM";
+		System.out.println(" The Expected OrangeHRM Tittle is:- "+expected_LogInPageTittle);
+		
+
+		String actual_LogInPageTittle=driver.getTitle();
+		System.out.println("The Actual OrangeHRM Tittle is:- "+actual_LogInPageTittle );
+
+		if(actual_LogInPageTittle.contains(expected_LogInPageTittle))
+		{
+			System.out.println("PASS");
+			
+		}
+		else
+		{
+			System.out.println("FAIL");
+			
+		}
+		
+	}
+
+	@Then("^User Should Close The Browser along With The Application$")
+	public void user_Should_Close_The_Browser_along_With_The_Application()
+	{
+	 driver.quit(); 
+	}
+
+}

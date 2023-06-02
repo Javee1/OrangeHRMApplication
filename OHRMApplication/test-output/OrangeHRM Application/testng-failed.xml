@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Application]">
+  <test thread-count="5" name="RadioButtons(failed)">
+    <classes>
+      <class name="com.RaidioButtons.RadioButtonsTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="radioButtonsTesting"/>
+        </methods>
+      </class> <!-- com.RaidioButtons.RadioButtonsTesting -->
+    </classes>
+  </test> <!-- RadioButtons(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Application] -->

@@ -1,0 +1,70 @@
+package com.OrangeHRMApplicationWebPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
+
+import com.BaseTest.BaseTest;
+import com.Utility.Log;
+
+public class OrangeHRMLogInPage extends BaseTest {
+	
+	public void OrangeHRMLogInPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(id="logInPanelHeading")
+	WebElement logInPageLogInPanel;
+	
+	@FindBy(id="txtUsernam")
+	WebElement userName;
+	
+	@FindBy(name="txtPassword")
+	WebElement password;
+	
+	@FindBy(name="Submit")
+	WebElement logInPageLogInButton;
+	
+	@FindBy(xpath="//*[@id=\"divLogo\"]/img")
+	WebElement logInPageLogo;
+	
+	public void validatingLogInPageText()
+	{
+		
+		String actual_LogInPageLogInPanelText=logInPageLogInPanel.getText();
+		Log.info("The actual LogIn page Text is :- "+actual_LogInPageLogInPanelText );
+		
+		String expected_LogInPageLogInPanelText="LOGIN Panel";
+		Log.info("The actual LogIn page Text is :- "+expected_LogInPageLogInPanelText );
+		
+		Assert.assertEquals(actual_LogInPageLogInPanelText, expected_LogInPageLogInPanelText,"Failed to validating The LogIn Page LogIn Panel");
+		
+		
+	}
+	
+	public void validatingLogIn(String userNameTestData,String passwordTestData)
+	{
+		
+		userName.sendKeys(userNameTestData);
+		password.sendKeys(passwordTestData);
+		logInPageLogInButton.click();
+		
+		
+	}
+	
+	public void validatingLogInPageLogo()
+	{
+		boolean flag=logInPageLogo.isDisplayed();
+		Log.info("Validating OHRM Application LogInPage Logo");
+		
+	Assert.assertTrue(flag,
+			"OrangeHRM Application LogIN Page does not contains OrangeHRMLogo - FAIL");
+		Log.info("OrangeHRM Application LogIN Page does not contains OrangeHRMLogo - FAIL");
+	}
+	
+	
+
+}

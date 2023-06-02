@@ -1,0 +1,7 @@
+<suite name ="OrangeHRM Application">
+	<test name="RadioButtons">
+		<classes>
+			<class name="com.RaidioButtons.RadioButtonsTesting"/>
+		</classes>
+	</test>
+</suite>

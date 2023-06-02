@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;OrangeHRM_POM&apos;&#x0D;&#x0A;- Original project: &apos;OrangeHRM_POM&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     OHRMApplicationLogs_TimeStamp.log&#x0D;&#x0A;     OHRMApplicationLogs.html&#x0D;&#x0A;     OHRMApplicationLogs.log" description="Delete elements" element1="OrangeHRMApplicationTestResultsLogFiles/OHRMApplicationLogs_TimeStamp.log" element2="OrangeHRMApplicationTestResultsLogFiles/OHRMApplicationLogs.html" element3="OrangeHRMApplicationTestResultsLogFiles/OHRMApplicationLogs.log" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1685252555937" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+Feature: OrangeHRM Application Functionalities Testing
+  Senario:VAlidating OrangeHRM Application LogIn Page
+  
+  Given User Should Launch Chrome Browser
+  When User Should Enter Valid OrangeHRM Application URL Address
+  Then User Should be Navigated to OrangeHRM LogIn Page
+  Then User Should Close The Browser along With The Application

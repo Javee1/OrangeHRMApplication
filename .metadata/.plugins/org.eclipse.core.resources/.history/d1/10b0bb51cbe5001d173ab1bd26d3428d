@@ -1,0 +1,13 @@
+package com.StringComparision;
+
+public class StringCompare {
+
+	public static void main(String[] args) {
+		
+		String string1="Testing";
+		
+		System.out.println(string1.charAt(2));
+
+	}
+
+}
